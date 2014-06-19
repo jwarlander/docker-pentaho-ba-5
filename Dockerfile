@@ -1,12 +1,12 @@
 # Pentaho Business Analytics 5.0
 #
-# VERSION	1.0
+# VERSION	1.1
 
-FROM ubuntu
-MAINTAINER Johan Warlander, jwarlander@redbridge.se
+FROM ubuntu:12.04
+MAINTAINER Johan Warlander, johan@snowflake.nu
 
 # Make sure package repository is up to date
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+#RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get upgrade -y
 
